@@ -1029,7 +1029,7 @@ footer .contact-link {
 .modal {
   position: absolute;
   z-index: 20;
-  top: 29%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 
