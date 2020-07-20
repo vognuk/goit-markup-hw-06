@@ -627,7 +627,7 @@
       <div class="modal">
 
         <button type="button" class="modal-close" data-modal-close>
-          <svg class="form-close-icon" width="32px" height="32px">
+          <svg class="form-close-icon">
             <use href="./images/sprite.svg#icon-close-button"></use>
           </svg>
         </button>
@@ -671,13 +671,12 @@
               cols="45"
               placeholder="Комментарий"></textarea>
               <label class="form-label" for="customer-mail"></label>
-          </div>
-          
+          </div>         
           
           <div class="license-agreement">
-            <label>
-                <input type="checkbox">
-                Соглашаюсь с рассылкой и принимаю <a class="license-agreement-link" href="https://www.google.com/">Условия договора</a>
+            <label class="checkbox-label">
+                <input class="hero-form-checkbox visually-hidden" type="checkbox" value="subscribe" name="subscribe">
+                <span class="hero-custom-checkbox">Соглашаюсь с рассылкой и принимаю<a class="license-agreement-link" href="https://www.google.com/">Условия договора</a></span> 
             </label>
           </div>  
           <button class="hero-submit button-style button-box" type="submit">Отправить</button>
