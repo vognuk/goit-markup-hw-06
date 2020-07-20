@@ -75,12 +75,14 @@
       <!--logo container-->
       <section class="hero">
       
-          <h1 class="hero-title">
-            ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
-          </h1>
-          <button class="button-style button-box">
-            <span class="input-text">Заказать услугу</span>
-          </button>
+          <!-- <div class="hero-within"> -->
+            <h2 class="hero-title">
+              ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
+            </h2>
+            <button  data-modal-open class="button-style button-box">
+              <span class="input-text">Заказать услугу</span>
+            </button>
+        <!-- </div> -->
         
       </section>
 
@@ -409,6 +411,7 @@
       </section>
 
       <!--clients container-->
+
       <section class="container">
         <h2 class="container-header">Постоянные клиенты</h2>
         <div class="container-box">
@@ -510,8 +513,10 @@
           </div>
         </div>
       </section>
-    </main>
+    
+
     <!--contacts container-->
+
     <footer>
       <div class="container footer-axis">
         <div class="footer-contacts">
@@ -615,5 +620,76 @@
       </div>
       <!-- <p class="copyright">2020 | Developed by GoIT Students</p> -->
     </footer>
+
+    <!-- Modal window -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="form-close-icon" width="32px" height="32px">
+            <use href="./images/sprite.svg#icon-close-button"></use>
+          </svg>
+        </button>
+
+        <h1 class="form-header">
+          Оставьте свои данные, мы вам перезвоним
+        </h1>
+
+        <form autocomplete="off" class="service-order">
+         
+          <div class="form-field">     
+            <input class="form-input" id="customer-name"  type="text" autofocus
+            placeholder=" ">
+            <label  class="form-label" for="customer-name">Имя</label>
+            <svg class="form-customer-icon" width="14px" height="14px">
+              <use href="./images/sprite.svg#icon-form-man"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <input class="form-input" id="customer-phone" type="text" placeholder=" ">
+            <label class="form-label" for="customer-phone" >Телефон</label> 
+            <svg class="form-customer-icon" width="14px" height="14px">
+              <use href="./images/sprite.svg#icon-form-phone"></use>
+            </svg>
+          </div>
+
+          <div class="form-field">
+            <input class="form-input" id="customer-mail" type="email" placeholder=" ">
+            <label class="form-label" for="customer-mail">Почта</label>
+            <svg class="form-customer-icon" width="14px" height="14px">
+              <use href="./images/sprite.svg#icon-form-envelope"></use>
+            </svg>
+          </div>
+
+          <div class="hero-comment">
+            <textarea
+            class="comment-field"
+              name="comment"
+              rows="5"
+              cols="45"
+              placeholder="Комментарий"></textarea>
+              <label class="form-label" for="customer-mail"></label>
+          </div>
+          
+          
+          <div class="license-agreement">
+            <label>
+                <input type="checkbox">
+                Соглашаюсь с рассылкой и принимаю <a class="license-agreement-link" href="https://www.google.com/">Условия договора</a>
+            </label>
+          </div>  
+          <button class="hero-submit button-style button-box" type="submit">Отправить</button>
+        
+        </form>
+
+      </div>
+
+       
+  </div>
+    <!-- Modal window script-->
+  </main>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
