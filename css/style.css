@@ -504,9 +504,6 @@ header > .container {
 .ways-subtitle {
   position: absolute;
 
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   padding-top: 27px;
   padding-bottom: 27px;
   width: 100%;
@@ -521,7 +518,6 @@ header > .container {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  box-align: center;
 
   background: rgba(47, 48, 58, 0.8);
 }
@@ -839,6 +835,7 @@ footer .contact-link {
 
 .button-box svg {
   fill: var(--button-text-color);
+  margin-left: 10px;
 }
 
 .input-text {
@@ -1135,7 +1132,6 @@ footer .contact-link {
   line-height: 16px;
   text-align: Left;
   letter-spacing: 0.01em;
-  box-align: center;
   text-align: center;
 }
 
